@@ -23,5 +23,14 @@ function lastModified() {
     document.getElementById("lastModified").innerText = `Last Modified: ${modified}`;
 }
 
+function handleResize() {
+  var x = document.getElementById("myLinks");
+  if (window.innerWidth >= 600) {
+      x.style.display = ""; // Reset inline style to allow CSS to take over
+  }
+}
+
+window.addEventListener("resize", handleResize);
+
 currentyear();
 lastModified();

@@ -1,34 +1,25 @@
-/* @media screen and (min-width: 600px) {
-    header{
-        background-color: #b789f9;
-        color: white;
-    }
 
-
-
-    .topnav a.icon{
-        display: none;
-    }
-
-    li 
-    {
-        display: flex;
-    }
-
-    a{
-        color: white;
-        justify-content: space-around;    
-      }
-
-} */
 @media screen and (min-width: 600px) {
     header {
         background-color: #b789f9;
         color: white;
     }
 
+
     .topnav a.icon {
         display: none;
+    }
+
+    .topnav
+    {
+        overflow: visible;
+    }
+
+    .topnav #myLinks
+    {
+        background-color: aquamarine;
+        display: block;
+        text-decoration: none;
     }
 
     ul {
@@ -39,6 +30,17 @@
 
     a {
         color: white;
-        /* text-decoration: none;  */
     }
+    .temples
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    figure
+    {
+        justify-content: center;
+    }
+
+
 }
