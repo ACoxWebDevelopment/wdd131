@@ -9,3 +9,5 @@ function lastModified() {
     let modified= document.lastModified;
     document.getElementById("lastModified").innerText = `Last Modified: ${modified}`;
 }
+currentyear();
+lastModified();
