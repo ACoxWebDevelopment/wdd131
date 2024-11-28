@@ -20,4 +20,4 @@ function calculateWindChill(temperature, windspeed)
 }
 currentyear();
 lastModified();
-calculateWindChill(33,10);
+calculateWindChill(37,3);
