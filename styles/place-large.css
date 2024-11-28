@@ -1,0 +1,44 @@
+@media screen and (min-width: 600px) {
+    h1{
+        background-color: rgb(25, 25, 82);
+    color: rgb(237, 237, 68);
+    
+    }
+    
+    main
+    {background-image: url(../images/northernlightsherolarge.webp);}
+
+    h2
+    {
+        color: green;
+    }
+
+    div
+    {
+        display: grid;
+        grid-template-columns: 1fr 200px 1fr;
+    }
+
+    img
+    {
+        display: none;
+    }
+
+    ul
+    {
+    grid-column-start: 3;
+    background-color: rgba(255, 255, 255, .7);
+    margin: 10px;
+    }
+
+    #stats
+    {
+        grid-column-start: 1;
+    }
+    
+    li
+    {
+        list-style-type: none;
+    };
+    
+}
