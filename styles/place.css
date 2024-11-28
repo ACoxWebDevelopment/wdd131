@@ -1,11 +1,14 @@
 :root
 {
     font-family: "Roboto" serif;
+    --blue: #191952;
+    --yellow: #eded44;
+    
 }
 h1
 {
-    background-color: rgb(25, 25, 82);
-    color: rgb(237, 237, 68);
+    background-color: var(--blue);
+    color: var(--yellow);
     grid-template-columns: 1fr;
     text-align: center;
 }
@@ -47,8 +50,8 @@ ul
 }
 footer
 {
-    background-color: rgb(25, 25, 82);
-    color: rgb(237, 237, 68);
+    background-color: var(--blue);
+    color: var(--yellow);
     grid-template-columns: 1fr;
     text-align: center;
 }

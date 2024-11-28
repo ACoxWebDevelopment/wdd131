@@ -1,9 +1,4 @@
 @media screen and (min-width: 600px) {
-    h1{
-        background-color: rgb(25, 25, 82);
-    color: rgb(237, 237, 68);
-    
-    }
     
     main
     {background-image: url(../images/northernlightsherolarge.webp);}
@@ -40,5 +35,18 @@
     {
         list-style-type: none;
     }
+    #weather::after
+    {
+            content: ""; 
+            display: inline-block; 
+            background-image: url("../images/weather.svg"); 
+            background-size: contain; 
+            background-repeat: no-repeat; 
+            width: 32px; 
+            height: 32px; 
+            margin-left: 5px; 
+            vertical-align: middle; 
+        }
+        
     
 }
