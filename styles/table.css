@@ -1,0 +1,36 @@
+:root {
+  --foredark: rgb(122, 98, 230);
+	--forelight: hsla(0,0%,100%,1);
+	--border: hsla(0,0%,20%,.8);
+	--shadow: hsl(0,0%,50%);
+	--zebra: hsl(0, 0%, 93%, 1);
+}
+
+table {
+	margin: 15px auto;
+	border: thin solid var(--border);
+	box-shadow: 0 0 10px var(--shadow);
+	border-collapse: collapse;
+}
+
+caption {
+  padding: 10px;
+  caption-side: bottom;
+	color: var(--back);
+	font-size: .85rem;
+}
+
+td
+{
+    border: 1px solid var(--border);
+}
+tbody tr:nth-child(even)
+{
+background-color: var(--zebra);
+}
+thead
+{background-color: var(--foredark);
+color: var(--forelight);
+}
+
+
