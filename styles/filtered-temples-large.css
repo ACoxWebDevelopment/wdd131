@@ -1,0 +1,65 @@
+@media screen and (min-width: 600px) {
+    header {
+        background-color: #b789f9;
+        color: white;
+    }
+
+
+    .topnav a.icon {
+        display: none;
+    }
+
+    .topnav
+    {
+        overflow: visible;
+    }
+
+    .topnav #myLinks
+    {
+        background-color: aquamarine;
+        display: block;
+        text-decoration: none;
+    }
+
+    ul {
+        display: flex; 
+        justify-content: space-around; 
+    }
+
+
+    a {
+        color: white;
+    }
+    #temples
+    {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    figure
+    {
+        justify-content: center;
+    }
+
+    main
+    {
+        color: #000;
+        background-color: rgb(247, 247, 250);
+      display: grid;
+      justify-content: center;
+      border: solid black;
+      border-radius: .5em;
+      text-align: center;
+    }
+
+    .temple-card
+    {
+        padding: 10px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        background-color: rgb(253, 250, 246);
+    }
+}
