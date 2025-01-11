@@ -27,7 +27,7 @@ main {
 
 .aside {
     grid-column: 2; 
-    background-color: rgb(142, 142, 221);
+    background-color: rgb(72, 72, 246);
     color: white;
     padding: 10px;
 }
@@ -41,9 +41,10 @@ footer {
     padding: 10px; 
 }
 
-ul {
-    list-style: none;
+nav {
     justify-content: space-around;
     display: flex;
 }
-
+a{
+    text-decoration: none;
+}
