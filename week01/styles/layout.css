@@ -11,13 +11,15 @@ header {
     grid-row: 1; 
 }
 
- main { display: contents;
-    /*Allows child elements to be directly positioned in the grid */
+main {
+    grid-column: 1 / -1; 
+    grid-row: 2;
+    display: grid; 
+    grid-template-columns: 2fr 1fr;
 }
 
 .mane {
     grid-column: 1; 
-    grid-row: 2; 
     background-color: blueviolet;
     color: white;
     padding: 10px; 
@@ -25,7 +27,6 @@ header {
 
 .aside {
     grid-column: 2; 
-    grid-row: 2; 
     background-color: rgb(142, 142, 221);
     color: white;
     padding: 10px;
@@ -39,9 +40,10 @@ footer {
     text-align: center; 
     padding: 10px; 
 }
-ul
-{
-    list-style:  none;
+
+ul {
+    list-style: none;
     justify-content: space-around;
     display: flex;
 }
+
