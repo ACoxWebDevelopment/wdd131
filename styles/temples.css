@@ -5,16 +5,10 @@ h1
     display: grid;
     justify-content: center
 }
-/* nav
-{
-    display: flex;
-    justify-content: space-evenly;
-} */
 
 /* Style the navigation menu */
 .topnav {
     overflow: hidden;
-    background-color: #35a053;
     position: relative;
   }
   

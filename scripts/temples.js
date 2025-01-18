@@ -10,7 +10,7 @@ function myFunction() {
 
     }
 
-let h2Element ="I'm your friendly neighborhood h2 element!";
+let h2Element ="home";
 let message= document.getElementById("menuChoice");
 message.textContent=h2Element;
 
