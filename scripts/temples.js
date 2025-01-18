@@ -10,7 +10,44 @@ function myFunction() {
 
     }
 
-  
+let h2Element ="I'm your friendly neighborhood h2 element!";
+let message= document.getElementById("menuChoice");
+message.textContent=h2Element;
+
+const small= document.getElementById("small");
+small.addEventListener("click", function(Event){
+  Event.preventDefault();
+  h2Element="small temples";
+  message.textContent = h2Element;
+});
+
+const large= document.getElementById("large");
+large.addEventListener("click", function(Event){
+  Event.preventDefault();
+  h2Element="large temples";
+  message.textContent = h2Element;
+});
+
+const neww= document.getElementById("new");
+neww.addEventListener("click", function(Event){
+  Event.preventDefault();
+  h2Element="new temples";
+  message.textContent = h2Element;
+});
+
+const old= document.getElementById("old");
+old.addEventListener("click", function(Event){
+  Event.preventDefault();
+  h2Element="old temples";
+  message.textContent = h2Element;
+});
+
+const home= document.getElementById("home");
+home.addEventListener("click", function(Event){
+  Event.preventDefault();
+  h2Element="home";
+  message.textContent = h2Element;
+});
 
 function currentyear()
 {
