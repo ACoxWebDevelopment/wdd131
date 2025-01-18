@@ -19,7 +19,7 @@ h1
   }
   
   /* Hide the links inside the navigation menu (except for logo/home) */
-  .topnav #myLinks {
+#myLinks {
     display: none;
   }
   
@@ -70,4 +70,7 @@ h1
   li{
     display: grid;
     justify-content: center;
+  }
+  li:hover{
+    font-weight: bolder;
   }

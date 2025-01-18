@@ -15,9 +15,8 @@
         overflow: visible;
     }
 
-    .topnav #myLinks
+     #myLinks
     {
-        background-color: aquamarine;
         display: block;
         text-decoration: none;
     }
