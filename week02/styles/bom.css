@@ -31,7 +31,8 @@ button {
 }
 
 button {
-	margin: 0.5rem;
+	margin-left: auto;
+	/* margin: 0.5rem; */
 }
 
 .delete {
@@ -56,6 +57,7 @@ li {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	gap: 1rem;
 }
 
 @media only screen and (min-width: 32.5em) {
@@ -67,3 +69,4 @@ li {
 		width: 320px;
 	}
 }
+

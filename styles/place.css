@@ -1,57 +1,39 @@
 :root
 {
-    font-family: "Roboto" , serif;
-    --blue: #191952;
-    --yellow: #eded44;
-    
-}
-h1
-{
-    background-color: var(--blue);
-    color: var(--yellow);
-    grid-template-columns: 1fr;
-    text-align: center;
-}
-main
-{
-    display: grid;
-    border: 1px solid;
+    --bckgrond: #151537;
+    --txt: rgb(189, 251, 114);
+    --div: rgba(255, 255, 255, .2);
 }
 
-h2
+*
 {
-    grid-template-columns: 1fr;
-    text-align: center;
-}
+    margin: 0;
+    padding: 0;
 
-ul
-{
-    grid-template-columns: 1fr;
+}
+main{
+    background-color: var(--bckgrond);
+    color: var(--txt);
+}
+h1, footer{
     text-align: center;
+    background-color: var(--bckgrond);
+    color: var(--txt);
+
+}
+div{
+    text-align: center;
+    background-color: var(--div);
+    border: 3px;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px;
+}
+ul{
     list-style: none;
 }
-
-.hero
+#weathericon
 {
-    width: 200px;
-    height: auto;
-}
-
-.weather
-{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    background-color: antiquewhite;
-    color: #000;
     width: 50px;
     height: auto;
-}
-footer
-{
-    background-color: var(--blue);
-    color: var(--yellow);
-    grid-template-columns: 1fr;
-    text-align: center;
 }

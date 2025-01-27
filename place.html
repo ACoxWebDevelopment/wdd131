@@ -15,80 +15,63 @@
     <header>
         <h1>Montana</h1>
     </header>
-
     <main>
-        <div class="hero">
-            <picture>
-                <source media="(min-width: 1500px )" srcset="images/northernlightsherolarge.webp">
-                <img src="images/northernlightsherosmall.webp" alt="Montana Northern Lights">
-
-            </picture>
-        </div>
-        <div>
-        <ul id="stats">
-            <li>
-                <h2>
-                    Data
-                </h2>
-            </li>
-            <li>
-               Area: 145,546 square miles
-            </li>
-            <li>
-                Population: 1.13 M.
-            </li>
-            <li>
-                Capital: Helena
-            </li>
-            <li>
-                Language: English
-            </li>
-            <li>
-                Currency: US dollar
-            </li>
-            <li>
-                Time Zone: UTC-6
-            </li>
-            <li>
-                Area Code: 406
-            </li>
-        </ul>
-        </div>
-
+        <picture>
+            <source media="(min-width: 601px)" srcset="images/northernlightsherolarge.webp">,
+            <source media="(max-width: 600px)" srcset="images/northernlightsherosmall.webp">,
+            <img src="images/northernlightsherosmall.webp" alt="Northern lights over Montana">
+        </picture>
         
- 
-        <div>
-        <ul>
-            <li>
-                <h2 id="weather">
-                    Weather
-                </h2>
-            </li>
 
-            <!-- <li>
-                <figure>
-                    <img class="weather" src="images/weather.svg" alt="weather icon">
-                </figure>
-            </li> -->
-            <li>
-                Temperature: 37F
-            </li>
-            <li>
-                Conditions: mostly cloudy
-            </li>
-            <li>
-                Wind: 3 mph
-            </li>
-            <li id="calculateWindChill">
-                
-            </li>
-        </ul>
+        <div>
+            <h2>Data</h2>
+            <ul>
+                <li>
+                    Area: 145,546 square miles
+                </li>
+                <li>
+                    Population: 1.13 M.
+                </li>
+                <li>
+                    Capital: Helena
+                </li>
+                <li>
+                    Language: English
+                </li>
+                <li>
+                    Currency: US dollar
+                </li>
+                <li>
+                    Time Zone: UTC-6
+                </li>
+                <li>
+                    Area Code: 406
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2>
+                Weather
+            </h2>
+            <img src="images/weather.svg" alt="weather icon" id="weathericon">
+            <ul>
+                <li>
+                    Temperature: 24 F
+                </li>
+                <li>
+                    Conditions: Mostly Cloudy
+                </li>
+                <li>
+                    Wind: 13mph
+                </li>
+                <li id="calculateWindChill">
+                    WindChill: 
+                </li>
+            </ul>
         </div>
     </main>
-
     <footer>
         <p>&copy; <span id="currentyear"></span> &#127776; Allan Cox &#127776; Montana USA</p>
         <p id="lastModified">Last Modified</p>
     </footer>
 </body>
-</html>
