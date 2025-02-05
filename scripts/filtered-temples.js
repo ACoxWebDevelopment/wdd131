@@ -1,4 +1,4 @@
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+
 
 const temples = [
   {
@@ -99,6 +99,8 @@ function temple() {
       </div>
     `;
   }
+  selection=document.getElementById("active");
+  document.getElementById("active").innerText = `home`
   document.getElementById("temples").innerHTML = content; // Update the content dynamically
 }
 
@@ -117,6 +119,8 @@ function small()
       </div>
     `;
   }}
+  selection=document.getElementById("active");
+  document.getElementById("active").innerText = `small`
   document.getElementById("temples").innerHTML = content; // Update the content dynamically  
 }
 
@@ -135,6 +139,8 @@ function large()
       </div>
     `;
   }}
+  selection=document.getElementById("active");
+  document.getElementById("active").innerText = `large`
   document.getElementById("temples").innerHTML = content; // Update the content dynamically  
 }
 
@@ -155,6 +161,8 @@ function noo()
       </div>
     `;
   }}
+  selection=document.getElementById("active");
+  document.getElementById("active").innerText = `new`
   document.getElementById("temples").innerHTML = content; // Update the content dynamically  
 }
 
@@ -174,8 +182,11 @@ function old()
         <img src="${temples[i].imageUrl}" alt="${temples[i].templeName}" width="300">
       </div>
     `;
+
   
   }}
+  selection=document.getElementById("active");
+  document.getElementById("active").innerText = `old`
   document.getElementById("temples").innerHTML = content; // Update the content dynamically  
 }
 
@@ -237,6 +248,7 @@ function handleResize() {
 window.addEventListener("resize", handleResize);
 
 
-
 currentyear();
 lastModified();
+temple();
+
