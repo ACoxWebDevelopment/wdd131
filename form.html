@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta name="author" content="Allan Cox">
+    <meta name="description" content="WDD131 Demo of forms with product review example ">
+    <script src="scripts/form.js" defer="defer"></script>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+</head>
+<body>
+    <header>
+        <h1>
+            Product Review
+        </h1>
+    </header>
+
+    <main>
+        <form action="review.html" method="get">
+            <fieldset>
+                <legend>Product Name</legend>
+                <label for="prod">Choose a product</label>
+                <select name="product" id="prod" required>
+                    <option value="" disabled selected>Select a Product</option>
+                </select>                                
+            </fieldset>
+
+            <fieldset id="rate">
+                <legend>Overall Rating *</legend>
+                <label>
+                    <input type="radio" name="star" required id="1star">&star;
+                </label>
+                <label>
+                    <input type="radio" name="star" required id="2star">&star; &star;
+                </label>
+                <label>
+                    <input type="radio" name="star" required id="3star">&star; &star; &star;
+                </label>
+                <label>
+                    <input type="radio" name="star" required id="4star">&star; &star; &star; &star;
+                </label>
+                <label>
+                    <input type="radio" name="star" required id="5star">&star; &star; &star; &star; &star;
+                </label>            
+            </fieldset>
+
+            <fieldset>
+                <legend>Date of Installation</legend>
+                <label for="install">Select a date</label>
+                <input type="date" id="install" name="install">
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Which features did you find useful in the product? (Check all that apply)</legend>
+                
+                <label class="chkbox"> 
+                    <input type="checkbox">Durability
+                </label>
+                <label class="chkbox"> 
+                    <input type="checkbox">Ease of Use
+                </label>
+                <label class="chkbox"> 
+                    <input type="checkbox">Performance
+                </label>
+                <label class="chkbox"> 
+                    <input type="checkbox">Design
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Written Review (optional)</legend>
+                <label for="txt">Write your review</label>
+                <textarea name="review" id="txt"></textarea>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Name (Optional)</legend>
+                <label for="name">Enter your name:</label>
+                <input type="text" id="name" name="name">
+                
+            </fieldset>
+
+            <fieldset>
+                <label>
+                    <input type="submit" value="Post Review">
+                </label>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> &#127776; Allan Cox &#127776; Montana USA</p>
+        <p id="lastModified">Last Modified</p>
+    </footer>
+</body>
+</html> 
