@@ -1,0 +1,166 @@
+:root
+{
+    --bckgrond: #151537;
+    --txt: rgb(189, 251, 114);
+    --div: rgba(255, 255, 255, .2);
+    --lnk: rgb(7, 10, 87);
+    --mnbckgrnd: rgb(70, 69, 67);
+}
+
+a
+{
+    color:  var(--lnk)
+}
+
+#firstline
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+main{
+    font-family: "roboto", sans-serif;
+    background-color: var(--mnbckgrnd);
+    color: var(--txt);
+}
+h1, footer{
+    text-align: center;
+    background-color: var(--bckgrond);
+    color: var(--txt);
+}
+
+
+#navi {
+    grid-row: 2;
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+img
+{
+    width: auto;
+    height: 37px;
+}
+
+label
+{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    margin: 15px;
+}
+
+div
+{
+    margin: 10px;
+}
+
+h2, h3,.pmain, #intro
+{
+    padding: 10px;
+    text-align: center;
+}
+
+footer
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    grid-template-rows: 1fr 1fr;
+}
+
+.telescope, .planet
+{
+    display: block;
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+fieldset
+{
+    border: none;
+}
+
+.weather
+{
+    color: var(--txt);
+}
+
+a:hover
+{
+    font-size: larger;
+}
+
+@media screen and (min-width: 600px) 
+{
+  
+    main
+    {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        justify-content: center;
+        border: solid;
+    }
+    
+    .telescope ,.planet
+{
+    grid-column-start: 2;
+    margin-bottom: 15px;
+}
+    
+    
+    #intro,h3,.pmain
+    {
+        grid-column-start: 2;
+        border-left: solid;
+        border-right: solid;
+        padding: 10px;
+    }
+    .left
+    {
+        border-right: solid;
+        padding: 10px;
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+
+    .lft
+    {
+        border-right: solid;
+        padding: 10px;
+    }
+
+    .right
+    {
+        border-left: solid;
+        padding: 10px;
+    }
+
+    #rite
+    {
+        grid-column-start: 3;
+    }
+    #navi {
+        grid-row: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: flex;
+        justify-content: space-around;
+        gap: 15px;
+    }  
+    #join
+    {
+        grid-column-start: 2;
+        padding: 10px;
+        border: 3px solid black;
+        border-radius: 5px;
+    }  
+
+}
